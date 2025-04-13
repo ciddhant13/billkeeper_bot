@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 # --- Environment Variables & Constants ---
 try:
     # Load credentials and configuration from environment variables
-    SERVICE_ACCOUNT_FILE = 'billkeeper_bot/service_account.json'  # Path to your service account key file
+    SERVICE_ACCOUNT_FILE = '/etc/secrets/service_account.json'  # Path to your service account key file
     # Ensure GOOGLE_DOC_ID is set in your environment
     DOC_ID = os.environ["GOOGLE_DOC_ID"]
     # Ensure BOT_TOKEN is set in your environment
